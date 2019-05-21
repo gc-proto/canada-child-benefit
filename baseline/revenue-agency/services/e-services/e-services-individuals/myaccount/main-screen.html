@@ -139,7 +139,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
       <div class="maContent-sm-tpmrgn">
         <h1 class="mrgn-tp-0 mrgn-bttm-0" id="wb-cont"><span class="fas fa-tachometer-alt" aria-hidden="true"></span> Overview </h1>
         <div class="well-asof hidden-print">
-			<p></p>
+          <p></p>
         </div>
         <div class="col-md-12 padding-0">
           <section class="well well-overviewpage">
@@ -170,7 +170,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <p class="mrgn-lft-md">Your account balance is: <span class="well-balAmt"> $0.00</span>
               <p class="mrgn-tp-sm mrgn-bttm-sm mrgn-lft-md"> <a href="/gol-ged/vais/accounting/balance/prot/ajaxEsa.action?yrId=0">View statement of account</a> </p>
               <p></p>
-
+              
               <!-- ajax-success --></section>
             <hr class="brdr-bttm" aria-hidden="true">
             <p class="mrgn-tp-0 mrgn-bttm-0 text-right overview-tablink hidden-print"> <a href="Xfer?xTo=accountsPaymentsTabId">Go to Accounts and payments<span class="fas fa-arrow-circle-right" aria-hidden="true"></span></a> </p>
@@ -180,11 +180,26 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <hr class="brdr-bttm mrgn-tp-0 overview-headerrule" aria-hidden="true">
             <section class="noisy-failure wb-init wb-data-ajax-replace-inited" id="o-ajax4" data-ajax-replace="/gol-ged/icbp/bpo/prot/getExpectedPayment.action">
               <div class="mrgn-lft-md">
-                <div class="text">
-                  <p><span>No benefits and credits payments are currently expected.</span></p>
-                </div>
-                <p> <a class="btn btn-primary btn-sm" href="">Apply for child benefits</a> </p>
-              </div>
+                <h3 class="h4">Next expected payment(s)</h3>
+                <section class="table-responsive">
+                  <table class="table table-bordered table-condensed table-hover mrgn-bttm-md">
+                    <thead>
+                      <tr>
+                        <th class="well-tableHeader">Date</th>
+                        <th class="well-tableHeader">Benefits and credits</th>
+                        <th class="well-tableHeader">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tablerecord"> June 20, 2019 </td>
+                        <td class="tablerecord">Canada child benefit</td>
+                        <td class="tablerecord amount"> XXXXXX </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+                Note:&nbsp;Not all money expected from the CRA may be shown in above table </div>
               <!-- ajax-success --></section>
             <hr class="brdr-bttm" aria-hidden="true">
             <p class="mrgn-tp-0 mrgn-bttm-0 text-right overview-tablink hidden-print"> <a href="benefits-screen.html">Go to Benefits and credits<span class="fas fa-arrow-circle-right" aria-hidden="true"></span></a> </p>
@@ -195,11 +210,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <span class="wb-inv">Registered Retirement Savings Plan (RRSP)</span>
             <section class="rrsp-failure wb-init wb-data-ajax-replace-inited" id="o-ajax5" data-ajax-replace="/gol-ged/prte/rrsp/prot/AjaxRrspA1Overview.action">
               <p class="mrgn-lft-md"> Your <strong>2019</strong> <a href="Xfer?xTo=RRSPMenuId">RRSP</a> deduction limit: <span class="well-balAmt"> $10,000.00 </span> </p>
-
+              
               <!-- ajax-success --></section>
             <span class="wb-inv">Tax Free Savings Account (TFSA)</span>
-            <section class="tfsa-failure wb-init wb-data-ajax-replace-inited" id="o-ajax6" data-ajax-replace="/gol-ged/tfsj/tfsa/prot/ViewMyAccountOverviewInfo.action">
-
+            <section class="tfsa-failure wb-init wb-data-ajax-replace-inited" id="o-ajax6" data-ajax-replace="/gol-ged/tfsj/tfsa/prot/ViewMyAccountOverviewInfo.action"> 
+              
               <!-- TFSA Room for the TFSA Current Year (most recent)-->
               <p class="mrgn-lft-md mrgn-bttm-0"> Your <strong>2019</strong> <a href="Xfer?xTo=TfsaMainMenuId"> TFSA</a> contribution room: <span class="well-balAmt"> $5,000.00 </span> <span class="label label-warning"><a class="wb-lbx lbx-modal wb-lbx-inited" id="wb-auto-13" href="#inline_content_modal">TFSA - Important information</a> </span> </p>
               <p class="mrgn-lft-md"> <small>As of January 1, 2019 &nbsp;</small> </p>
@@ -216,7 +231,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                   </ul>
                 </div>
               </section>
-
+              
               <!-- ajax-success --></section>
             <hr class="brdr-bttm" aria-hidden="true">
             <p class="mrgn-tp-0 mrgn-bttm-0 text-right overview-tablink hidden-print"> <a href="Xfer?xTo=rrspSavingsId">Go to RRSP and TFSA<span class="fas fa-arrow-circle-right" aria-hidden="true"></span></a> </p>
@@ -228,7 +243,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <h2 class="h3 mrgn-tp-0">Related services</h2>
               <ul class="lst-spcd">
                 <li class="mrgn-tp-0"> <a href="Xfer?xTo=InfoSlipsId">Tax information slips (T4 and more)</a> </li>
-                <li class="mrgn-tp-0"> <a href="Xfer?xTo=ChangeMyAddressId">Change my address and phone number(s)</a> </li>
+                <li class="mrgn-tp-0"> <a href="address-1.html">Change my address and phone number(s)</a> </li>
                 <li class="mrgn-tp-0"> <a href="Xfer?xTo=DirectDepositId">Arrange my direct deposit</a> </li>
                 <li class="mrgn-tp-0"> <a href="Xfer?xTo=ManageOnlineMailId">Notification preferences</a> </li>
                 <li class="mrgn-tp-0"> <a href="Xfer?xTo=IncomeVerificationId">Proof of income statement (option 'C' print)</a> </li>
@@ -276,8 +291,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </div>
       </div>
     </main>
-
-    <!-- Side menu ends -->
+    
+    <!-- Side menu ends --> 
   </div>
 </div>
 <footer role="contentinfo" id="wb-info">
@@ -300,10 +315,10 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     </div>
   </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/res/wet-boew4/js/wet-boew.min.js"></script>
-<!--<![endif]-->
+<!--[if gte IE 9 | !IE ]><!--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="/res/wet-boew4/js/wet-boew.min.js"></script> 
+<!--<![endif]--> 
 <!--[if lt IE 9]><script src="/res/wet-boew4/js/ie8-wet-boew2.min.js"></script><![endif]-->
 </body>
 </html>
