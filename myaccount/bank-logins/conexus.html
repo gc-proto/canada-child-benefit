@@ -49,22 +49,12 @@
 								<div class="contentColumn contentColumn0 border-fix">
 									<div class="section simple Component-StandardContent ">
 										<h1 id="PageTitle">Please login to continue</h1>
-																				<form action="/idp/profile/fi/sk_conexus_ca?execution=e1s1" name="mdlogon" class="mdlogon mdIALogonEnrollPac" method="post" onsubmit="return(processLogin())">
-											<input type="hidden" name="accountNumber" id="accountNumber" />
-											<input type="hidden" id="pan-required-text" value="Please enter your Card Number." disabled />
-											<input type="hidden" id="pan-invalid-text" value="Sorry, this feature is not available for Business Online Delegate accounts. You should return to SecureKey and select a different login option." disabled />
-											<input type="hidden" id="pan-length-rule" value="^\d{17}$" disabled />
-											<input type="hidden" id="pan-length-text" value="The Card Number you have entered is not recognized. Please try again." disabled />
-											<input type="hidden" id="pac-required-text" value="Please enter your Password." disabled />
-											<input type="hidden" id="pac-invalid-text" value="You have entered an incorrect Password. Please try again." disabled />
-											<input type="hidden" id="pac-length-rule" value="^\S{5,16}$" disabled />
-											<input type="hidden" id="pac-length-text" value="You have entered an incorrect Password. Please try again." disabled />
 											<div id="loginAuth" class="jsEnabled">
 												<div class="required pan">
 													<label for="pan">
 														Card Number													</label>
 																										<div class="input">
-																											<input type="text" name="pan" id="pan" value="" aria-describedby="pan-error" aria-invalid="false">
+																											<input type="text" name="pan" id="pan" value="Personal1" aria-describedby="pan-error" aria-invalid="false">
 														<div id="pan-error" class="error-message" role="alert" aria-live="passive"></div>
 													</div>
 												</div>
@@ -72,7 +62,7 @@
 													<label for="pac">
 														Password													</label>
 													<div class="input">
-														<input type="password" name="pac" id="pac" value="" aria-describedby="pac-error" aria-invalid="false">
+														<input type="password" name="pac" id="pac" value="**********" aria-describedby="pac-error" aria-invalid="false">
 														<div id="pac-error" class="error-message" role="alert" aria-live="passive"></div>
 													</div>
 												</div>
@@ -86,7 +76,7 @@
 														</li>
 														<li>
 															<span class="btnWrap">
-																<input type="submit" name="_eventId_proceed" id="Continue" value="LOGIN" class="submit">
+																<a href="../../baseline/revenue-agency/services/e-services/e-services-individuals/myaccount/main-screen.html"><input style="width:117px;" type="submit" name="_eventId_proceed" id="Continue" value="LOGIN"></a>
 															</span>
 														</li>
 													</ul>
