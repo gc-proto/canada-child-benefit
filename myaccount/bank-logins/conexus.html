@@ -1,0 +1,168 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>SecureKey Conexus Credit Union Login</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10,IE=11" />
+	<meta name="viewport" content="width=device-width,maximum-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=960" />
+	<link href="https://auth.conexus.ca/idp/cra/css/brand.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="https://auth.conexus.ca/idp/cra/css/content.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="https://auth.conexus.ca/idp/cra/sk_conexus_ca/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+		<div class="md mdi ">
+		<div class="outerHeader">
+			<div class="header">
+				<a href="#" class="logo current">Conexus Credit Union					<span class="imgOverlay"></span>
+				</a>
+				<div class="global">
+					<ul class="nav global">
+						<li class="link0 even">
+							<a tabindex="0" class="languageToggle" onclick="languageToggle('fr')">Français</a>
+						</li>
+						<li class="link1 odd">
+							<a href="https://www.conexus.ca/Personal/Support/HelpSecureKeyConcierge/" target="_blank">Support</a>
+						</li>
+						<li class="link2 linkN even">
+							<a href="https://www.conexus.ca/Personal/ContactUs/" target="_blank">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="primary">
+					<div class="primary">
+						<ul class="nav primary"></ul>
+					</div>
+				</div>
+			</div>
+			<!--/header-->
+		</div>
+		<div class="outerColContainer">
+			<div class="colContainer">
+				<div class="colOneTwoThree">
+					<div class="mainContent" id="mainContent">
+						<div class="section contentColumns Component-ContentColumns">
+							<div class="columnGroup columnGroup1 columnGroup2Col">
+								<div class="contentColumn contentColumn0 border-fix">
+									<div class="section simple Component-StandardContent ">
+										<h1 id="PageTitle">Please login to continue</h1>
+																				<form action="/idp/profile/fi/sk_conexus_ca?execution=e1s1" name="mdlogon" class="mdlogon mdIALogonEnrollPac" method="post" onsubmit="return(processLogin())">
+											<input type="hidden" name="accountNumber" id="accountNumber" />
+											<input type="hidden" id="pan-required-text" value="Please enter your Card Number." disabled />
+											<input type="hidden" id="pan-invalid-text" value="Sorry, this feature is not available for Business Online Delegate accounts. You should return to SecureKey and select a different login option." disabled />
+											<input type="hidden" id="pan-length-rule" value="^\d{17}$" disabled />
+											<input type="hidden" id="pan-length-text" value="The Card Number you have entered is not recognized. Please try again." disabled />
+											<input type="hidden" id="pac-required-text" value="Please enter your Password." disabled />
+											<input type="hidden" id="pac-invalid-text" value="You have entered an incorrect Password. Please try again." disabled />
+											<input type="hidden" id="pac-length-rule" value="^\S{5,16}$" disabled />
+											<input type="hidden" id="pac-length-text" value="You have entered an incorrect Password. Please try again." disabled />
+											<div id="loginAuth" class="jsEnabled">
+												<div class="required pan">
+													<label for="pan">
+														Card Number													</label>
+																										<div class="input">
+																											<input type="text" name="pan" id="pan" value="" aria-describedby="pan-error" aria-invalid="false">
+														<div id="pan-error" class="error-message" role="alert" aria-live="passive"></div>
+													</div>
+												</div>
+												<div class="required pac">
+													<label for="pac">
+														Password													</label>
+													<div class="input">
+														<input type="password" name="pac" id="pac" value="" aria-describedby="pac-error" aria-invalid="false">
+														<div id="pac-error" class="error-message" role="alert" aria-live="passive"></div>
+													</div>
+												</div>
+												<div class="formActions">
+													<input type="hidden" name="pm_fp" id="pm_fp" value="">
+													<ul>
+														<li>
+															<span class="btnWrap">
+																<input type="button" onclick="navigateTo('/idp/profile/fi/sk_conexus_ca?execution=e1s1&_eventId=UserCancelled')" id="UserCancel" value="Return to SecureKey">
+															</span>
+														</li>
+														<li>
+															<span class="btnWrap">
+																<input type="submit" name="_eventId_proceed" id="Continue" value="LOGIN" class="submit">
+															</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- end of div id="loginAuth" -->
+										</form>
+									</div>
+								</div>
+								<div class="contentColumn contentColumn1">
+									<div class="section simple Component-StandardContent">
+										<img src="https://auth.conexus.ca/idp/cra/images/logo_securekey_en.png">
+										<div class="content">
+											<p>Get easy access to secure third-party online services with Conexus Credit Union and SecureKey Concierge<sup>TM</sup>.</p><p>Simply sign in using your Conexus Credit Union Online Banking login credentials and you’ll be directed to the third party site you’ve selected.</p><p>And rest assured, your online banking session won’t be opened at any time and no confidential information will be shared with online sites during this process.</p>											<a href="https://securekeyconcierge.com/faq" target="_blank">Need help? Refer to our FAQs</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="outerFooter">
+			<div class="footer">
+				<p>&copy; 2018 Conexus Credit Union</p>
+				<div class="section contentColumns Component-ContentColumns vcCustomFooter">
+					<div class="columnGroup columnGroup0 columnGroup3Col">
+						<div class="contentColumn contentColumn0">
+							<div class="section simple Component-StandardContent ">
+								<ul>
+									<li>
+										<a href="https://www.conexus.ca/Personal/ContactUs/" target="_blank">Contact us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contentColumn contentColumn1">
+							<div class="section simple Component-StandardContent ">
+								<ul>
+									<li>
+										<a href="https://www.conexus.ca/Personal/Support/HelpSecureKeyConcierge/" target="_blank">Support</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+			</div>
+		</div>
+	</div>
+
+	<script src="https://auth.conexus.ca/idp/cra/js/hashtable.js"></script>
+	<script src="https://auth.conexus.ca/idp/cra/js/rsa.js"></script>
+	<script src="https://auth.conexus.ca/idp/cra/js/url-polyfill.min.js"></script>
+	<script src="https://auth.conexus.ca/idp/cra/js/helpers.js"></script>
+	<script src="https://auth.conexus.ca/idp/cra/js/validator.js"></script>
+	<script>
+		window.onload = function() {
+			document.getElementById('pm_fp').value = encode_deviceprint();
+		}
+
+		function processLogin() {
+			if (validate()) {
+				if ("" != '') {
+					document.getElementById('accountNumber').value = "" + document.getElementById('pan').value;
+				} else {
+					document.getElementById('accountNumber').value = document.getElementById('pan').value;
+				}
+				return true;
+			}
+			return false;
+		}
+	</script>
+</body>
+
+</html>
