@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html ng-app="com.td.tdi.uapWeb">
+
+	<head><script type="text/javascript" src="https://authentication.td.com//authentication.td.com/waw/idp/js/td_common_153.js"> </script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+
+		<title>TD Login</title>
+		<link rel="stylesheet" href="https://authentication.td.com/uap-ui/resources/css/themes/uap-application-all-css.min-2291ca26e4663c96fd01edcae16c82f6.css">
+
+		<link rel="stylesheet" href="https://authentication.td.com/uap-ui/resources/css/themes/uap-application-emerald-css.min-9b5c53a2288169f7698dff9d428d58e5.css">
+		<link rel="icon" href="bower_components/td-emerald-standards/emerald/assets/img/favicon.ico">
+	</head>
+
+	<body prevent-click-highlight autoscroll>
+
+		<div id="contentWrapper">
+
+			<!-- Header -->
+			<div data-ui-view="header"></div>
+
+			<!-- Main Content / Body -->
+			<div class="td-contentarea" role="main">
+				<UI-VIEW></UI-VIEW>
+			</div>
+
+			<!-- Footer -->
+			<div data-ui-view="footer"></div>
+
+		</div>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="resources/es5-shim/es5-shim.min.js"></script>
+		<script type="text/javascript" src="resources/html5shiv/dist/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<script id="#client-configuration" type="text/javascript">
+				window.uap = window.uap || {};
+				window.uap.configuration = {"configurationValues":[{"ThirdPartyResumePath":"/waw/idp/authn/v1/return/third-party"},{"Ping_Domain":null},{"authenticationFlowType":"authcode"},{"additionalParams":null},{"ec":null},{"lang":"en_CA"},{"consumer":"securekey"},{"tsnConsumerAppId":null}]};
+			</script>
+		<script type="text/javascript" src="https://authentication.td.com/uap-ui/resources/js/uap-application-all-js.min-7cb92b8eab570b25e91eae6727ad2068.js"></script>
+		<script type="text/javascript" src="https://authentication.td.com/uap-ui/resources/js/uap-application.min-6f9af8d7309be1a48fffc5fb778f49a0.js"></script>
+	</body>
+
+</html>
