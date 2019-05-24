@@ -300,10 +300,8 @@ else {pagNation()}
 		if ($(window).width() < 990) {
  $("#steps-menu").wrapInner("<details />")
 		
-	$('h2.nav-title').wrap('<summary />')
+	$("h2.nav-title").wrap("<summary />")
 		};
-		}	
-});
 		}
 	if($('#nav-pull').length > 0) {	
 $('#nav-pull').on( "wb-contentupdated", function( event, data ){
