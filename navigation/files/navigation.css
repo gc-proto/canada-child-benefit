@@ -34,11 +34,7 @@ main#steps-navigation nav#steps-menu {
 }
 
 
-@-moz-document url-prefix()
-	{details}
-	details summary::-webkit-details-marker {
-  display:none;
-}
+
 @media all and (min-width:992px) {
 main#steps-navigation #wb-steps-title, main#steps-navigation section#steps-content {
 	width: 66.66%;
