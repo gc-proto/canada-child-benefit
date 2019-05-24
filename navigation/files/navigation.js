@@ -300,7 +300,7 @@ else {pagNation()}
 		if ($(window).width() < 990) {
  $("#steps-menu").wrapInner("<details />")
 		
-	$("h2.nav-title").wrap("<summary />")
+	$("h2.nav-title").wrap("<summary tabindex="0" class="wb-init wb-details-inited" id="wb-section-nav-details" role="button" aria-expanded="false"></summary>")
 		};
 		}
 	if($('#nav-pull').length > 0) {	
