@@ -272,7 +272,7 @@ switch( pgLang.toLowerCase() ){
 		}	
 }			
 			
-	if (!$("#nav-pull").find("li:first").is(".active")){}
+	if (!$("#nav-pull").find("li:first").is(".active")){
 	switch( pgLang.toLowerCase() ){
 			case "fr":
 				$(next).clone().appendTo( ".pull-pager .next" ).attr({"rel":"next"}).wrapInner('<span class="wb-inv-xs wb-inv-sm"></span>').prepend(nextPagF);
@@ -283,7 +283,7 @@ switch( pgLang.toLowerCase() ){
 				$(next).clone().appendTo( ".pull-pager .next" ).attr({"rel":"next"}).wrapInner('<span class="wb-inv-xs wb-inv-sm"></span>').prepend(nextPagE);
 	$(prev).clone().appendTo(".pull-pager .previous" ).attr({"rel":"prev"}).wrapInner('<span class="wb-inv-xs wb-inv-sm wb-inv-md"></span>').prepend(prevPagE);
 		}
-};
+}}
 		
 if($('#nav-pull').length > 0) {	
 $('#nav-pull').on( "wb-contentupdated", function( event, data ){
