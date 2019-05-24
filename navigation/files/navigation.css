@@ -35,7 +35,7 @@ main#steps-navigation nav#steps-menu {
 
 
 
-@media all and (min-width:992px) {
+@media (min-width:992px) {
 main#steps-navigation #wb-steps-title, main#steps-navigation section#steps-content {
 	width: 66.66%;
 	float: left;
