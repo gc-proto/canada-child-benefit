@@ -302,10 +302,11 @@ else {pagNation()}
 		
 	$("h2.nav-title").wrap("<summary />")
 		};
-			$.getScript("https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/polyfills/details.js");
+			
 		}
 	if($('#nav-pull').length > 0) {	
 $('#nav-pull').on( "wb-contentupdated", function( event, data ){
 mobileCollapse()  });}	
 else {mobileCollapse()}
+		$.getScript("https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/polyfills/details.js");
 	})( jQuery, document, wb );
