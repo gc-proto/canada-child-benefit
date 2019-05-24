@@ -32,7 +32,11 @@ main#steps-navigation nav#steps-menu {
 	margin-right: 10px;
 	
 }
-
+@-moz-document url-prefix()
+	{details}
+	details summary::-webkit-details-marker {
+  display:none;
+}
 
 
 @media (min-width:992px) {
