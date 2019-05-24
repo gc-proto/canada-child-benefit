@@ -302,7 +302,7 @@ else {pagNation()}
 		
 	$('h2.nav-title').wrap('<summary />')
 		};
-		
+		}	
 });
 		}
 	if($('#nav-pull').length > 0) {	
