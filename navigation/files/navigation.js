@@ -297,11 +297,22 @@ else {pagNation()}
 	(function( $, document, wb ) {
 "use strict";
 		function mobileCollapse() {
-		if ($(window).width() < 990) {
- $("#steps-menu").wrapInner("<details />")
-		
-	$("h2.nav-title").wrap("<summary />")
-		};
+		if ($(window).width() < 990  && !$('html').hasClass("wb-disable")) {
+$("#steps-menu>:first-child").attr({'aria-expanded':'false', 'role': 'button', 'tabindex': '0'});
+var callback = function(){
+  $("#steps-menu").toggleClass("open");
+$(this).attr('aria-expanded',$(this).attr('aria-expanded')=='false'?'true':'false' );
+    
+    $("#nav-title~*").slideToggle(500);
+  }
+
+  $(":not(.wb-disable) #steps-menu>:first-child").click(callback);
+   $("#steps-menu>:first-child").on('keypress',function(e) {
+    if(e.which == 13) {
+       callback()
+    }
+    });
+    }
 			
 		}
 	if($('#nav-pull').length > 0) {	
