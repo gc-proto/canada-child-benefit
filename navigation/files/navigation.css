@@ -14,30 +14,31 @@ main#steps-navigation section#steps-content, main#steps-navigation nav#steps-men
 main#steps-navigation nav#steps-menu {
 	margin-bottom: 22px;
 }
-#steps-menu>details, #steps-menu>details>summary {
-	border-color: #26374a; list-style: none;
+/*new*/
+@media only screen and (max-width: 991px){
+#steps-menu {border:1px solid #26374a; border-radius:4px; padding-left:15px; padding-right:15px}
+#steps-menu>:first-child {visibility:visible!important; display:inline-block!important; color:#26374a; margin-left:-15px; margin-right:-15px; padding:10px; margin-bottom:0px; margin-top:0px;  cursor:pointer}
+#steps-menu.open>:first-child, .wb-disable #steps-menu>:first-child {border-bottom:1px solid #26374a;}
+#steps-menu>:first-child+* {margin-top:15px}
+#steps-menu>:first-child:hover, #steps-menu>:first-child:focus {background-color:#26374a; color:white}
+#steps-menu.open>:first-child:before {content: "\e114";  display:inline-block;  vertical-align: -25%; font-family: "Glyphicons Halflings"; margin-right: 10px;   -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;  
 }
- #steps-menu>details>summary:hover,  #steps-menu>details>summary:focus {
-	text-decoration:none; background-color: #26374a; color:#fff;
+#steps-menu:not(.open)>:first-child:before {content: "\e114";   display:inline-block; vertical-align: -25%; -ms-transform: rotate(-90deg); 
+  -webkit-transform: rotate(-90deg); font-family: "Glyphicons Halflings"; margin-right: 10px;   -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;  
 }
-#steps-menu>details:not([open])>summary::before {
-	content: "\e080";
-	font-family: "Glyphicons Halflings";
-	margin-right: 10px;
-	
-}
-#steps-menu>details>summary::before {
-	content: "\e114";
-	font-family: "Glyphicons Halflings";
-	margin-right: 10px;
-	
-}
-@-moz-document url-prefix()
-	{details}
-	details summary::-webkit-details-marker {
-  display:none;
-}
+#steps-menu>* {display:none;}
+#steps-menu>:first-child {visibility:visible!important; display:block!important}
+.wb-disable #steps-menu>* {display:inherit}
 
+.wb-disable #steps-menu:not(.open)>:first-child:before {content: "\e114";   display:inline-block; vertical-align: -25%; -ms-transform: rotate(0deg); 
+  -webkit-transform: rotate(0deg);
+
+}
+/*end*/
 
 @media (min-width:992px) {
 main#steps-navigation #wb-steps-title, main#steps-navigation section#steps-content {
