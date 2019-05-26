@@ -17,7 +17,7 @@ main#steps-navigation nav#steps-menu {
 /*new*/
 @media all (max-width: 991px){
 #steps-menu {border:1px solid #26374a; border-radius:4px; padding-left:15px; padding-right:15px}
-
+}
 /*end*/
 
 @media (min-width:992px) {
