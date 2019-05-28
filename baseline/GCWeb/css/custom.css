@@ -182,13 +182,13 @@ div.pagedetails .btn {
 
 /* start custom breadcrumb  */
 
-
+/*
 @media screen and (max-width: 737px) {
 #wb-bc li:before {
-		/* color: #333;
+		 color: #333;
 		content: "<"!important;
-		font-size: 1.5em; */
-}
+		font-size: 1.5em;
+}*/
 
 .gcweb-v2~#wb-bc ol {
 
