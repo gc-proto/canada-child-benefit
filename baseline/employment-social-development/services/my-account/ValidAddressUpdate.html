@@ -107,7 +107,7 @@
 
 
 
-		<form method="post" action="StreetPerfectSearch2.html" id="mainForm">
+		<form method="post" action="./StreetPerfectSearch.aspx?COAType=2" id="mainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
@@ -149,41 +149,190 @@ function __doPostBack(eventTarget, eventArgument) {
     <span id="MainContent_ContentPlaceHolder2_lblMandatory">Answers to fields and questions with an asterisk (*) are mandatory</span>
     <!-- Error Repeater -->
 
-    <br />
-    <br />
-    <p id="MainContent_ContentPlaceHolder2_pNote"><strong>Note:</strong> If you are unsure of your postal code you can look it up on the <a href="UserMessage.aspx?hid=55">Canada Post</a> Web site.</p>
-    <div class="boxLeft">
+		<div class="cleanbreak">
+	        <br />
+	        <br />
+	        <h2 id="MainContent_ContentPlaceHolder2_ChangeOfAddress">Change Information</h2>
+	    </div>
+	    <p id="MainContent_ContentPlaceHolder2_HowToChange">Enter your complete mailing address in the fields below.  Use your mouse or the TAB key to enter these fields.</p>
+	    <p id="MainContent_ContentPlaceHolder2_Warning">
+	    </p>
+	    <!-- MyContactInfoUpdate -->
+	    <div class="alignLeft">
 
-<div class="p1css" role="form">
-    <div class="form-group">
-        <label id="MainContent_ContentPlaceHolder2_PostalCodeSearch_lblPostalCode" class="text-nowrap" for="txtPostalCode">* Postal Code:<br/>(Example : K1A 2B3)<span class='error_eoad'></span></label>
-       <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$PostalCodeSearch$txtPostalCode" type="text" maxlength="7" id="txtPostalCode" class="form-control" style="width:102px;" />
-    </div>
-</div>
+	<div class="p1css form-horizontal" role="form">
+	    <br />
+	    <div id="MainContent_ContentPlaceHolder2_ValidatedAddressUpdate_AptRow" class="form-group">
+	        <label for="Apt" id="LabelApt" class="col-sm-2 control-label">Apt./Suite:</label>
+	        <div class="col-sm-10">
+	            <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$Apt" type="text" maxlength="5" id="Apt" class="form-control" style="width:78px;" />
+	        </div>
+	        <br />
+	    </div>
+	    <div id="MainContent_ContentPlaceHolder2_ValidatedAddressUpdate_StreetRow">
+	        <div class="form-group">
+	            <label for="ddlStreetNumber" id="LabelStreetNumber" class="col-sm-2 control-label">Street Number:</label>
+	            <div class="col-sm-10">
+	                <select name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$ddlStreetNumber" id="ddlStreetNumber" class="form-control">
+		<option value="2620">2620</option>
+		<option value="2622">2622</option>
+		<option value="2624">2624</option>
+		<option value="2626">2626</option>
+		<option value="2628">2628</option>
+		<option value="2630">2630</option>
+		<option value="2632">2632</option>
+		<option value="2634">2634</option>
+		<option value="2636">2636</option>
+		<option value="2638">2638</option>
+		<option value="2640">2640</option>
+		<option value="2642">2642</option>
+		<option value="2644">2644</option>
+		<option value="2646">2646</option>
+		<option value="2648">2648</option>
+		<option value="2650">2650</option>
+		<option value="2652">2652</option>
+		<option value="2654">2654</option>
+		<option value="2656">2656</option>
+		<option value="2658">2658</option>
+		<option value="2660">2660</option>
+		<option value="2662">2662</option>
+		<option value="2664">2664</option>
+		<option value="2666">2666</option>
+		<option value="2668">2668</option>
+		<option value="2670">2670</option>
+		<option value="2672">2672</option>
+		<option value="2674">2674</option>
+		<option value="2676">2676</option>
+		<option value="2678">2678</option>
+		<option value="2680">2680</option>
+		<option value="2682">2682</option>
+		<option value="2684">2684</option>
+		<option value="2686">2686</option>
+		<option value="2688">2688</option>
+		<option value="2690">2690</option>
+		<option value="2692">2692</option>
+		<option value="2694">2694</option>
+		<option value="2696">2696</option>
+		<option value="2698">2698</option>
+		<option value="2700">2700</option>
+		<option value="2702">2702</option>
+		<option value="2704">2704</option>
+		<option value="2706">2706</option>
+		<option value="2708">2708</option>
+		<option value="2710">2710</option>
+		<option value="2712">2712</option>
+		<option value="2714">2714</option>
+		<option value="2716">2716</option>
+		<option value="2718">2718</option>
+		<option value="2720">2720</option>
+		<option value="2722">2722</option>
+		<option value="2724">2724</option>
+		<option value="2726">2726</option>
+		<option value="2728">2728</option>
+		<option value="2730">2730</option>
+		<option value="2732">2732</option>
+		<option value="2734">2734</option>
+		<option value="2736">2736</option>
+		<option value="2738">2738</option>
+		<option value="2740">2740</option>
+		<option value="2742">2742</option>
+		<option value="2744">2744</option>
+		<option value="2746">2746</option>
+		<option value="2748">2748</option>
+		<option value="2750">2750</option>
+		<option value="2752">2752</option>
+		<option value="2754">2754</option>
+		<option value="2756">2756</option>
+		<option value="2758">2758</option>
+		<option value="2760">2760</option>
+		<option value="2762">2762</option>
+		<option value="2764">2764</option>
 
-    </div>
-      <div class="cleanbreak">
-        <br />
-        <br />
-     </div>
-    <div class="table-responsive">
+	</select>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label for="ddlNumberPrefix" id="lblNumberPrefix" class="col-sm-2 control-label">Street Suffix:</label>
+	            <div class="col-sm-10">
+	                <select name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$ddlNumberPrefix" id="ddlNumberPrefix" class="form-control">
+		<option selected="selected" value="0">Select</option>
+		<option value="1/2">1/2</option>
+		<option value="1/4">1/4</option>
+		<option value="3/4">3/4</option>
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+		<option value="D">D</option>
+		<option value="E">E</option>
+		<option value="F">F</option>
+		<option value="G">G</option>
+		<option value="H">H</option>
+		<option value="I">I</option>
+		<option value="J">J</option>
+		<option value="K">K</option>
+		<option value="L">L</option>
+		<option value="M">M</option>
+		<option value="N">N</option>
+		<option value="O">O</option>
+		<option value="P">P</option>
+		<option value="Q">Q</option>
+		<option value="R">R</option>
+		<option value="S">S</option>
+		<option value="T">T</option>
+		<option value="U">U</option>
+		<option value="V">V</option>
+		<option value="W">W</option>
+		<option value="X">X</option>
+		<option value="Y">Y</option>
+		<option value="Z">Z</option>
 
-    </div>
+	</select>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label for="Street" id="lblStreetName" class="col-sm-2 control-label">Street Name:</label>
+	            <div class="col-sm-10">
+	                <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$Street" type="text" value="MONCTON RD " size="42" readonly="readonly" id="Street" class="form-control" />
+	            </div>
+	        </div>
+	    </div>
 
-        <br />
-        <br />
-        <input type="submit" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnContinue" value="Retrieve Address" id="MainContent_ContentPlaceHolder2_btnContinue" class="btn btn-default" />&nbsp;&nbsp;
-        <input type="button" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear" value="Clear" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear&#39;,&#39;&#39;)" id="MainContent_ContentPlaceHolder2_btnClear" class="btn btn-default" />&nbsp;&nbsp;
-        <a href="/sc/msca-mdsc/portal-portail/pro/ei-ae/meiio-mraed/Pages/MyContactInfo.aspx" id="MainContent_ContentPlaceHolder2_btnCancel" class="btn btn-default">Cancel Changes</a>
+	    <div id="MainContent_ContentPlaceHolder2_ValidatedAddressUpdate_CityRow" class="form-group">
+	        <label for="City" id="LabelCity" class="col-sm-2 control-label">City, Town or Village:</label>
+	        <div class="col-sm-10">
+	            <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$City" type="text" value="OTTAWA" size="42" readonly="readonly" id="City" class="form-control" />
+	        </div>
+	    </div>
+	    <div id="MainContent_ContentPlaceHolder2_ValidatedAddressUpdate_ProvinceRow" class="form-group">
+	        <label for="txtProvince" id="LabelProvince" class="col-sm-2 control-label">Province or Territory:</label>
+	        <div class="col-sm-10">
+	            <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$txtProvince" type="text" value="ON" readonly="readonly" id="txtProvince" class="form-control" style="width:100px;" />
+	        </div>
+	    </div>
+	    <div id="MainContent_ContentPlaceHolder2_ValidatedAddressUpdate_PostalCodeRow" class="form-group">
+	        <label for="PostalCodetext" id="LabelPostalCode" class="col-sm-2 control-label">Postal Code:</label>
+	        <div class="col-sm-10">
+	            <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$ValidatedAddressUpdate$PostalCodetext" type="text" value="K2B7W1" readonly="readonly" id="PostalCodetext" class="form-control" style="width:100px;" />
+	        </div>
+	    </div>
+
+	    <div class="cleanbreak"></div>
+	    <div class="form-group">
+
+	    </div>
+	</div>
 
 
+	    </div>
+	    <p id="MainContent_ContentPlaceHolder2_ClickContinue">Choose &quot;Continue&quot; to go to the next page or &quot;Cancel Changes&quot; to return to the My mailing address and telephone number information page.</p>
+	    <div>
+	        <input type="submit" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$Continuer" value="Continue" id="MainContent_ContentPlaceHolder2_Continuer" class="btn btn-default" />&nbsp;
+	        <a href="/sc/msca-mdsc/portal-portail/pro/ei-ae/meiio-mraed/Pages/MyContactInfo.aspx" id="MainContent_ContentPlaceHolder2_Annuler" class="btn btn-default">Cancel Changes</a>
+	    </div>
+
+	    </form>
 
 
-<script type="text/javascript">
-//<![CDATA[
-WebForm_AutoFocus('txtPostalCode');//]]>
-</script>
-</form>
 
 
 

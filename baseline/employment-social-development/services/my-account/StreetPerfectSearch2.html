@@ -107,7 +107,7 @@
 
 
 
-		<form method="post" action="StreetPerfectSearch2.html" id="mainForm">
+		<form method="post" action="./StreetPerfectSearch.aspx?COAType=2" id="mainForm">
 <div class="aspNetHidden">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
@@ -162,16 +162,20 @@ function __doPostBack(eventTarget, eventArgument) {
 </div>
 
     </div>
-      <div class="cleanbreak">
-        <br />
-        <br />
-     </div>
-    <div class="table-responsive">
+		<div class="table-responsive">
+		        <div>
+			<table class="table table-bordered rowAlternateColor2 text-center" cellspacing="0" rules="all" border="1" id="MainContent_ContentPlaceHolder2_gvAddress" style="border-collapse:collapse;">
+				<caption align="Top">
+					In the table below, click on the postal code link in the row that contains your address within the range of addresses it covers.
+				</caption><tbody><tr>
+					<th align="center" scope="col" abbr="Street or PO Box Name">Building or PO Box Number</th><th align="center" scope="col" abbr="Street or PO Box Name">Street or PO Box Name</th><th align="center" scope="col" abbr="City, Town or Village">City, Town or Village</th><th align="center" scope="col" abbr="Province/Territory">Province/Territory</th><th align="center" scope="col" abbr="Please select the postal code link that corresponds to your address">Please select the postal code link that corresponds to your address</th>
+				</tr><tr class="rowAlternateColor1" align="center">
+					<td>2620 - 2764 Even</td><td>MONCTON RD </td><td>OTTAWA</td><td>ON</td><td><a href="ValidAddressUpdate.html">K2B7W1</a></td>
+				</tr>
+			</tbody></table>
+		</div>
+		    </div>
 
-    </div>
-
-        <br />
-        <br />
         <input type="submit" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnContinue" value="Retrieve Address" id="MainContent_ContentPlaceHolder2_btnContinue" class="btn btn-default" />&nbsp;&nbsp;
         <input type="button" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear" value="Clear" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear&#39;,&#39;&#39;)" id="MainContent_ContentPlaceHolder2_btnClear" class="btn btn-default" />&nbsp;&nbsp;
         <a href="/sc/msca-mdsc/portal-portail/pro/ei-ae/meiio-mraed/Pages/MyContactInfo.aspx" id="MainContent_ContentPlaceHolder2_btnCancel" class="btn btn-default">Cancel Changes</a>
@@ -184,6 +188,7 @@ function __doPostBack(eventTarget, eventArgument) {
 WebForm_AutoFocus('txtPostalCode');//]]>
 </script>
 </form>
+
 
 
 
