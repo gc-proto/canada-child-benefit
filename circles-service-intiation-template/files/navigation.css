@@ -149,7 +149,7 @@ ul.vertical-steps li>:first-child::before, .vertical-steps li ul li>:first-child
 ul.vertical-steps.noline li>:first-child::before {
 	margin-top: 0.3em
 }
-ul.vertical-steps li a[href]:hover::before, ul.vertical-steps li ul li a[href]:hover::before, ul.vertical-steps li li ul li a[href]:hover::before {
+ul.vertical-steps li a[href]:hover::before, .vertical-steps li ul li a[href]:hover::before, .vertical-steps li li ul li a[href]:hover::before {
 	width: 20px;
 	height: 20px;
 	margin-top: -1px;
