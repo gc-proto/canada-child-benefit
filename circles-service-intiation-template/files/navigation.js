@@ -294,22 +294,22 @@ else {pagNation()}
 	});
 
 /*Navigation collapse in small devices */
-	(function( $, document, wb ) {
+	(function() {
 "use strict";
 		function mobileCollapse() {
 		if ($(window).width() < 990  && !$('html').hasClass("wb-disable")) {
 $("#steps-menu>:first-child").attr({'aria-expanded':'false', 'role': 'button', 'tabindex': '0'});
 var callback = function(){
   $("#steps-menu").toggleClass("open");
-$(this).attr('aria-expanded',$(this).attr('aria-expanded')=='false'?'true':'false' );
+$(this).attr('aria-expanded',$(this).attr('aria-expanded')==='false'?'true':'false' );
     
     $("#nav-title~*").slideToggle(500);
-  }
+  };
 
   $(":not(.wb-disable) #steps-menu>:first-child").click(callback);
    $("#steps-menu>:first-child").on('keypress',function(e) {
-    if(e.which == 13) {
-       callback()
+    if(e.which === 13) {
+       callback();
     }
     });
     }
