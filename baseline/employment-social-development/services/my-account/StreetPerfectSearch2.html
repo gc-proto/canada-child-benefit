@@ -157,7 +157,7 @@ function __doPostBack(eventTarget, eventArgument) {
 <div class="p1css" role="form">
     <div class="form-group">
         <label id="MainContent_ContentPlaceHolder2_PostalCodeSearch_lblPostalCode" class="text-nowrap" for="txtPostalCode">* Postal Code:<br/>(Example : K1A 2B3)<span class='error_eoad'></span></label>
-       <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$PostalCodeSearch$txtPostalCode" type="text" maxlength="7" id="txtPostalCode" class="form-control" style="width:102px;" />
+       <input name="ctl00$ctl00$MainContent$ContentPlaceHolder2$PostalCodeSearch$txtPostalCode" type="text" maxlength="7" id="txtPostalCode" class="form-control" style="width:102px;" value="K1A 2B3" disabled="disabled" disabled />
     </div>
 </div>
 
@@ -170,15 +170,15 @@ function __doPostBack(eventTarget, eventArgument) {
 				</caption><tbody><tr>
 					<th align="center" scope="col" abbr="Street or PO Box Name">Building or PO Box Number</th><th align="center" scope="col" abbr="Street or PO Box Name">Street or PO Box Name</th><th align="center" scope="col" abbr="City, Town or Village">City, Town or Village</th><th align="center" scope="col" abbr="Province/Territory">Province/Territory</th><th align="center" scope="col" abbr="Please select the postal code link that corresponds to your address">Please select the postal code link that corresponds to your address</th>
 				</tr><tr class="rowAlternateColor1" align="center">
-					<td>2620 - 2764 Even</td><td>MONCTON RD </td><td>OTTAWA</td><td>ON</td><td><a href="ValidAddressUpdate.html">K2B7W1</a></td>
+					<td>2620 - 2764 Even</td><td>Your Old Street</td><td>Your Old City</td><td>ON</td><td><a href="ValidAddressUpdate.html">K1A 2B3</a></td>
 				</tr>
 			</tbody></table>
 		</div>
 		    </div>
 
-        <input type="submit" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnContinue" value="Retrieve Address" id="MainContent_ContentPlaceHolder2_btnContinue" class="btn btn-default" />&nbsp;&nbsp;
-        <input type="button" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear" value="Clear" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear&#39;,&#39;&#39;)" id="MainContent_ContentPlaceHolder2_btnClear" class="btn btn-default" />&nbsp;&nbsp;
-        <a href="/sc/msca-mdsc/portal-portail/pro/ei-ae/meiio-mraed/Pages/MyContactInfo.aspx" id="MainContent_ContentPlaceHolder2_btnCancel" class="btn btn-default">Cancel Changes</a>
+        <a href="StreetPerfectSearch2.html" class="btn btn-default">Retrieve Address</a><!--<input type="submit" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnContinue" value="Retrieve Address" id="MainContent_ContentPlaceHolder2_btnContinue" class="btn btn-default" />-->&nbsp;&nbsp;
+        <a href="StreetPerfectSearch2.html" class="btn btn-default">Clear</a><!--<input type="button" name="ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear" value="Clear" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$MainContent$ContentPlaceHolder2$btnClear&#39;,&#39;&#39;)" id="MainContent_ContentPlaceHolder2_btnClear" class="btn btn-default" />-->&nbsp;&nbsp;
+        <a href="MyContactInfo.html" id="MainContent_ContentPlaceHolder2_btnCancel" class="btn btn-default">Cancel Changes</a>
 
 
 
